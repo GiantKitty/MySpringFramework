@@ -1,0 +1,36 @@
+[{
+  "beanName":"robot",
+  "beanClassName":"com.rs.springframework.ioc.entity.Robot",
+  "beanPropertyArgs": [
+    {
+      "propertyName": "hand", "propertyRef": "hand"
+    },
+    {
+      "propertyName": "mouth", "propertyRef": "mouth"
+    }
+  ]
+},
+  {
+    "beanName":"hand",
+    "beanClassName":"com.rs.springframework.ioc.entity.Hand",
+    "beanPropertyArgs": [
+      {
+        "propertyName": "handCode", "propertyValue": "111111"
+      },
+      {
+        "propertyName": "mouth", "propertyRef": "mouth"
+      }
+    ]
+  },
+  {
+    "beanName":"mouth",
+    "beanClassName":"com.rs.springframework.ioc.entity.Mouth",
+    "beanPropertyArgs": [
+      {
+        "propertyName": "mouthCode", "propertyValue": "222222"
+      },
+      {
+        "propertyName": "hand", "propertyRef": "hand"
+      }
+    ]
+  }]

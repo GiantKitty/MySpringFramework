@@ -1,0 +1,23 @@
+[
+  {
+    "beanName":"beforeMethod",
+    "className":"StartTimeBeforeMethod"
+  },
+  {
+    "beanName":"afterMethod",
+    "className":"EndTimeAfterMethod"
+  },
+  {
+    "beanName":"testService",
+    "className":"TestService"
+  },
+  {
+    "beanName":"testServiceProxy",
+    "className":"com.rs.springframework.aop.bean.ProxyFactoryBean",
+    "target":"testService",
+    "interceptorNames":[
+      "beforeMethod",
+      "afterMethod"
+    ]
+  }
+]
